@@ -1,3 +1,9 @@
+tutorial link:
+==============
+https://simpleisbetterthancomplex.com/series/2017/09/11/a-complete-beginners-guide-to-django-part-2.html
+
+
+
 manage.py is a shortcut to use the django-admin command-line utility.  It's used to run management commands related to our project.  We will use it to run the development servver, run tests, create migrations and much more.
 
 __init__.py this empty file tells Python that this folder is a Python package.
