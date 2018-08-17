@@ -37,3 +37,12 @@ views.py this is the file where we handle the request/response cycle of our web 
 **once a view is created, it needs to be mapped to a url via the "myproject" urls.py file.
 
 
+
+
+
+
+
+******************************
+where am i in the tutorial?
+******************************
+part 3 - search for (ctrl+f) "Now the link back.  We can write the test first:".
