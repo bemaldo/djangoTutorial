@@ -1,0 +1,11 @@
+html,body, .col-md-12, .row{
+    height: 100%;
+}
+
+.row > div{
+    height: 100%;
+}
+
+.row .col-sm-2{
+    background-color:#eee;
+}

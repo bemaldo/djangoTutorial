@@ -1,18 +1,14 @@
-{% load static %}<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>{{ board.name }}</title>
+{% extends 'base.html' %}
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+{% block title %}
+  {{ board.name }} - {{ block.super }}
+{% endblock %}
 
-  </head>
-  <body>
-    <div class="container">
-      <ol class="breadcrumb my-4">
-        <li class="breadcrumb-item">Boards</li>
-        <li class="breadcrumb-item active">{{ board.name }}</li>
-      </ol>
-    </div>
-  </body>
-</html>
+{% block breadcrumb %}
+  <li class="breadcrumb-item"><a style="color: silver;"  href="{% url 'home' %}">{{board.name}}</a></li>
+  <li class="breadcrumb-item " style="color: white;" > Dashboard</li>
+{% endblock %}
+
+{% block content %}
+    <!-- just leaving it empty for now. we will add core here soon. -->
+{% endblock %}

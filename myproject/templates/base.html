@@ -1,0 +1,38 @@
+{% load static %}<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}Django Boards{% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">  
+    <link href="https://fonts.googleapis.com/css?family=Peralta" rel="stylesheet">
+  </head>
+  <body>
+
+    <!-- Navigation with breadcrumb-->
+
+    <nav class=>
+
+
+
+        <ol class="breadcrumb" style="background-color: rgb(53, 53, 53); border-radius: 0px;margin: 0px;padding: 5px;padding-left: 30px;">
+            <li class="breadcrumb-item"><a style="color: white; font-family: 'Peralta', cursive; font-size: 30px; "  href="{% url 'home' %}">Workflow + +</a></li>
+        </ol>
+
+        <ol class="breadcrumb" style="background-color: rgb(53, 53, 53); border-radius: 0px; margin: 0px;padding: 5px;padding-left: 30px;">
+                {% block breadcrumb %}
+                {% endblock %}
+        </ol>
+
+    </nav>
+
+
+
+    <div style="padding: 10px">
+      
+      {% block content %}
+      {% endblock %}
+    </div>
+  </body>
+</html>
+
+
